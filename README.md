@@ -4542,7 +4542,7 @@ Coding, General purpose, Open source
 ### Description
 - Run Claude Code, Codex, and a built-in ReAct engine (DirectV2) side-by-side in one desktop window — switch per conversation, compare answers in parallel
 - Local-first: local SQLite history + FTS5/vector hybrid long-term memory that automatically extracts durable facts across sessions; no account, no relay server — your LLM API key is the only auth
-- Plan-Execute-Verify-Judge architecture with DAG-based parallel execution, context compaction, and file-snapshot rollback
+- Plan-Execute-Verify-Judge architecture: an intent router picks fast / standard / deep paths per task; the deep path plans a DAG and executes independent steps in parallel, with context compaction and file-snapshot rollback
 - 27 built-in plugins (Excel SAX streaming, data reports, Arduino/BLE, MQTT, Modbus) + MCP client support
 - Electron + TypeScript, GPL-3.0, Windows & macOS
 
